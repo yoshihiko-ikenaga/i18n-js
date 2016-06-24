@@ -13,17 +13,8 @@
 //
 
 ;(function(factory) {
-  if (typeof module !== 'undefined' && module.exports) {
-    // Node/CommonJS
-    module.exports = factory(this);
-  } else if (typeof define === 'function' && define.amd) {
-    // AMD
-    var global=this;
-    define('i18n', function(){ return factory(global);});
-  } else {
-    // Browser globals
-    this.I18n = factory(this);
-  }
+  // Browser globals
+  this.I18n = factory(this);
 }(function(global) {
   "use strict";
 
