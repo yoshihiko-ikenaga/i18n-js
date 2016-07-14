@@ -13,8 +13,9 @@
 //
 
 ;(function(factory) {
+  var g =  window || global; 
   // Browser globals
-  this.I18n = factory(this);
+  g.I18n = factory(g);
 }(function(global) {
   "use strict";
 
